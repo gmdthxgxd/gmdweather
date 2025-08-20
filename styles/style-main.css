@@ -56,7 +56,7 @@ header {
     background-color: #C4E1E6;
 }
 .menu a:visited {
-    color: inherit;
+    color: #000000;
 }
 .city {
     background-color: #C4E1E6;
@@ -269,4 +269,5 @@ header {
         background-position: 0 0;
     }
 }
+
 
