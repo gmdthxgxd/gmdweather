@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>GMD Weather</title>
+        <link rel="stylesheet" href="./styles/style-weatherNow.css">
+    </head>
+    <body>
+        <div class="main-background">
+            <div class="overlay">
+                <header>
+                    <nav class="nav-menu">
+                        <div class="menu">
+                            <a class="menu-btn" href="index.html">
+                                <div>
+                                    <p>Главная</p>
+                                </div>
+                            </a>
+                            <a class="menu-btn" id="weatherByDaysBtn" href="weatherByDays.html">
+                                <div>
+                                    <p>Прогноз на 5 дней</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="menu">
+                            <a class="menu-btn" id="weatherNowBtn" href="">
+                                <div>
+                                    <p>Погода сейчас</p>
+                                </div>
+                            </a>
+                            <a class="menu-btn city" href="">
+                                <div id="your-city-nav">
+                                    <p>Ваш город</p>
+                                </div>
+                            </a>
+                        </div>
+                    </nav>
+                </header>
+                <section class="weatherNow">
+                    <div class="logo">
+                        <img src="./images/logo.png" alt="">
+                    </div>
+                    <div class="card">
+                        <div class="card-top">
+                            <div class="card-time"><p>11:22</p></div>
+                            <div class="card-date"><p>14 Aug</p></div>
+                        </div>
+                        <div class="card-mid">
+                            <svg fill="#FFFFFF" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+                                <use href=""></use> 
+                            </svg>
+                            <div class="card-temp"><p>27°C</p></div>
+                            <div class="card-city"><p>Kazakhstan, Almaty</p></div>
+                        </div>
+                        <div class="card-bottom">
+                            <div class="card-humidity">
+                                <svg fill="#FFFFFF" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+                                    <use href="images/svg/humidity.svg#humidity"></use> 
+                                </svg>
+                                <div class="card-humidity-text">
+                                    <p>28%</p>
+                                    <p>Влажность</p>
+                                </div>
+                            </div>
+                            <div class="card-wind">
+                                <svg fill="#FFFFFF" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+                                    <use href="images/svg/wind.svg#wind"></use> 
+                                </svg>
+                                <div class="card-wind-text">
+                                    <p>5.1 м/с</p>
+                                    <p>Скорость Ветра</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="footer-container">
+              <div class="footer-logo">
+                <h2>GMD <span>Weather</span></h2>
+                <p>Точный прогноз погоды в любое время</p>
+              </div>
+              <nav class="footer-nav">
+                <a href="">Главная</a>
+                <a href="">Прогноз на 5 дней</a>
+                <a href="">Погода сейчас</a>
+              </nav>
+            </div>
+            <div class="footer-bottom">
+              <p>© 2025 GMD Weather. Все права защищены.</p>
+            </div>
+        </footer>
+    </body>
+    <script src="scripts/oneCall.js"></script>
+</html>

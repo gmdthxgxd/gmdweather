@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>GMD Weather</title>
+        <link rel="stylesheet" href="./styles/style-weatherByDays.css">
+    </head>
+    <body>      
+        <div class="main-background">
+            <div class="overlay">
+                <header>
+                    <nav class="nav-menu">
+                        <div class="menu">
+                            <a class="menu-btn" href="index.html">
+                                <div>
+                                    <p>Главная</p>
+                                </div>
+                            </a>
+                            <a class="menu-btn" id="weatherByDaysBtn" href="">
+                                <div>
+                                    <p>Прогноз на 5 дней</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="menu">
+                            <a class="menu-btn" id="weatherNowBtn" href="weatherNow.html">
+                                <div>
+                                    <p>Погода сейчас</p>
+                                </div>
+                            </a>
+                            <a class="menu-btn city" href="">
+                                <div id="your-city-nav">
+                                    <p>Ваш город</p>
+                                </div>
+                            </a>
+                        </div>
+                    </nav>
+                </header>
+                <section class="weather-by-days">
+                    <div class="logo">
+                        <img src="./images/logo.png" alt="">
+                    </div>
+                    <div class="weather-cards">
+                        <button class="card-btn left-card-btn" id="prev-btn">
+                            <img src="./images/next.png" alt="">
+                        </button>
+                        <div class="card-wrapper">
+                            <div class="card active">
+                                <div class="header-card"></div>
+                                <div class="temperature info">
+                                    <div class="header-text first-header">
+                                        <p></p>
+                                    </div>
+                                    <div class="card-info">
+                                        <div class="card-text card-temp">
+                                                <p>Утром</p>
+                                                <div class="temp-text">
+                                                    <p></p>
+                                                    <svg fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg">
+                                                        <use href=""></use> 
+                                                    </svg>
+                                                </div>
+                                        </div>
+                                        <div class="card-text card-temp">
+                                                <p>Днем</p>
+                                                <div class="temp-text">
+                                                    <p></p>
+                                                    <svg fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg">
+                                                        <use></use> 
+                                                    </svg>
+                                                </div>
+                                        </div>
+                                        <div class="card-text card-temp">
+                                                <p>Вечером</p>
+                                                <div class="temp-text">
+                                                    <p></p>
+                                                    <svg fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg">
+                                                        <use href=""></use> 
+                                                    </svg>
+                                                </div>
+                                        </div>
+                                        <div class="card-text card-temp">
+                                                <p>Ночью</p>
+                                                <div class="temp-text">
+                                                    <p></p>
+                                                    <svg fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg">
+                                                        <use href=""></use> 
+                                                    </svg>
+                                                </div>                                       
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="time info">
+                                    <div class="header-text">
+                                        <p>время</p>
+                                    </div>
+                                    <div class="card-info">
+                                        <div class="card-text"><p></p></div>
+                                        <div class="card-text"><p></p></div>
+                                        <div class="card-text"><p></p></div>
+                                        <div class="card-text"><p></p></div>
+                                    </div>
+                                </div>
+                                <div class="humidity info">
+                                    <div class="header-text">
+                                        <p>влажность</p>
+                                    </div>
+                                    <div class="card-info">
+                                        <div class="card-text"><p></p></div>
+                                        <div class="card-text"><p></p></div>
+                                        <div class="card-text"><p></p></div>
+                                        <div class="card-text"><p></p></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="header-card"></div>
+                                <div class="temperature info">
+                                    <div class="header-text first-header">
+                                        <p></p>
+                                    </div>
+                                    <div class="card-info">
+                                        <div class="card-text card-temp">
+                                                <p>Утром</p>
+                                                <div class="temp-text">
+                                                    <p></p>
+                                                    <svg fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg">
+                                                        <use href=""></use> 
+                                                    </svg>
+                                                </div>
+                                        </div>
+                                        <div class="card-text card-temp">
+                                                <p>Днем</p>
+                                                <div class="temp-text">
+                                                    <p></p>
+                                                    <svg fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg">
+                                                        <use href=""></use> 
+                                                    </svg>
+                                                </div>
+                                        </div>
+                                        <div class="card-text card-temp">
+                                                <p>Вечером</p>
+                                                <div class="temp-text">
+                                                    <p></p>
+                                                    <svg fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg">
+                                                        <use href=""></use> 
+                                                    </svg>
+                                                </div>
+                                        </div>
+                                        <div class="card-text card-temp">
+                                                <p>Ночью</p>
+                                                <div class="temp-text">
+                                                    <p></p>
+                                                    <svg fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg">
+                                                        <use href=""></use> 
+                                                    </svg>
+                                                </div>                                       
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="time info">
+                                    <div class="header-text">
+                                        <p>время</p>
+                                    </div>
+                                    <div class="card-info">
+                                        <div class="card-text"><p></p></div>
+                                        <div class="card-text"><p></p></div>
+                                        <div class="card-text"><p></p></div>
+                                        <div class="card-text"><p></p></div>
+                                    </div>
+                                </div>
+                                <div class="humidity info">
+                                    <div class="header-text">
+                                        <p>влажность</p>
+                                    </div>
+                                    <div class="card-info">
+                                        <div class="card-text"><p></p></div>
+                                        <div class="card-text"><p></p></div>
+                                        <div class="card-text"><p></p></div>
+                                        <div class="card-text"><p></p></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="header-card"></div>
+                                <div class="temperature info">
+                                    <div class="header-text first-header">
+                                        <p></p>
+                                    </div>
+                                    <div class="card-info">
+                                        <div class="card-text card-temp">
+                                                <p>Утром</p>
+                                                <div class="temp-text">
+                                                    <p></p>
+                                                    <svg fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg">
+                                                        <use href=""></use> 
+                                                    </svg>
+                                                </div>
+                                        </div>
+                                        <div class="card-text card-temp">
+                                                <p>Днем</p>
+                                                <div class="temp-text">
+                                                    <p></p>
+                                                    <svg fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg">
+                                                        <use href=""></use> 
+                                                    </svg>
+                                                </div>
+                                        </div>
+                                        <div class="card-text card-temp">
+                                                <p>Вечером</p>
+                                                <div class="temp-text">
+                                                    <p></p>
+                                                    <svg fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg">
+                                                        <use href=""></use> 
+                                                    </svg>
+                                                </div>
+                                        </div>
+                                        <div class="card-text card-temp">
+                                                <p>Ночью</p>
+                                                <div class="temp-text">
+                                                    <p></p>
+                                                    <svg fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg">
+                                                        <use href=""></use> 
+                                                    </svg>
+                                                </div>                                       
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="time info">
+                                    <div class="header-text">
+                                        <p>время</p>
+                                    </div>
+                                    <div class="card-info">
+                                        <div class="card-text"><p></p></div>
+                                        <div class="card-text"><p></p></div>
+                                        <div class="card-text"><p></p></div>
+                                        <div class="card-text"><p></p></div>
+                                    </div>
+                                </div>
+                                <div class="humidity info">
+                                    <div class="header-text">
+                                        <p>влажность</p>
+                                    </div>
+                                    <div class="card-info">
+                                        <div class="card-text"><p></p></div>
+                                        <div class="card-text"><p></p></div>
+                                        <div class="card-text"><p></p></div>
+                                        <div class="card-text"><p></p></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="header-card"></div>
+                                <div class="temperature info">
+                                    <div class="header-text first-header">
+                                        <p></p>
+                                    </div>
+                                    <div class="card-info">
+                                        <div class="card-text card-temp">
+                                                <p>Утром</p>
+                                                <div class="temp-text">
+                                                    <p></p>
+                                                    <svg fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg">
+                                                        <use href=""></use> 
+                                                    </svg>
+                                                </div>
+                                        </div>
+                                        <div class="card-text card-temp">
+                                                <p>Днем</p>
+                                                <div class="temp-text">
+                                                    <p></p>
+                                                    <svg fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg">
+                                                        <use href=""></use> 
+                                                    </svg>
+                                                </div>
+                                        </div>
+                                        <div class="card-text card-temp">
+                                                <p>Вечером</p>
+                                                <div class="temp-text">
+                                                    <p></p>
+                                                    <svg fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg">
+                                                        <use href=""></use> 
+                                                    </svg>
+                                                </div>
+                                        </div>
+                                        <div class="card-text card-temp">
+                                                <p>Ночью</p>
+                                                <div class="temp-text">
+                                                    <p></p>
+                                                    <svg fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg">
+                                                        <use href=""></use> 
+                                                    </svg>
+                                                </div>                                       
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="time info">
+                                    <div class="header-text">
+                                        <p>время</p>
+                                    </div>
+                                    <div class="card-info">
+                                        <div class="card-text"><p></p></div>
+                                        <div class="card-text"><p></p></div>
+                                        <div class="card-text"><p></p></div>
+                                        <div class="card-text"><p></p></div>
+                                    </div>
+                                </div>
+                                <div class="humidity info">
+                                    <div class="header-text">
+                                        <p>влажность</p>
+                                    </div>
+                                    <div class="card-info">
+                                        <div class="card-text"><p></p></div>
+                                        <div class="card-text"><p></p></div>
+                                        <div class="card-text"><p></p></div>
+                                        <div class="card-text"><p></p></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="header-card"></div>
+                                <div class="temperature info">
+                                    <div class="header-text first-header">
+                                        <p></p>
+                                    </div>
+                                    <div class="card-info">
+                                        <div class="card-text card-temp">
+                                                <p>Утром</p>
+                                                <div class="temp-text">
+                                                    <p></p>
+                                                    <svg fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg">
+                                                        <use href=""></use> 
+                                                    </svg>
+                                                </div>
+                                        </div>
+                                        <div class="card-text card-temp">
+                                                <p>Днем</p>
+                                                <div class="temp-text">
+                                                    <p></p>
+                                                    <svg fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg">
+                                                        <use href=""></use> 
+                                                    </svg>
+                                                </div>
+                                        </div>
+                                        <div class="card-text card-temp">
+                                                <p>Вечером</p>
+                                                <div class="temp-text">
+                                                    <p></p>
+                                                    <svg fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg">
+                                                        <use href=""></use> 
+                                                    </svg>
+                                                </div>
+                                        </div>
+                                        <div class="card-text card-temp">
+                                                <p>Ночью</p>
+                                                <div class="temp-text">
+                                                    <p></p>
+                                                    <svg fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg">
+                                                        <use href=""></use> 
+                                                    </svg>
+                                                </div>                                       
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="time info">
+                                    <div class="header-text">
+                                        <p>время</p>
+                                    </div>
+                                    <div class="card-info">
+                                        <div class="card-text"><p></p></div>
+                                        <div class="card-text"><p></p></div>
+                                        <div class="card-text"><p></p></div>
+                                        <div class="card-text"><p></p></div>
+                                    </div>
+                                </div>
+                                <div class="humidity info">
+                                    <div class="header-text">
+                                        <p>влажность</p>
+                                    </div>
+                                    <div class="card-info">
+                                        <div class="card-text"><p></p></div>
+                                        <div class="card-text"><p></p></div>
+                                        <div class="card-text"><p></p></div>
+                                        <div class="card-text"><p></p></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="card-btn right-card-btn" id="next-btn">
+                            <img src="./images/next.png" alt="">
+                        </button>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="footer-container">
+              <div class="footer-logo">
+                <h2>GMD <span>Weather</span></h2>
+                <p>Точный прогноз погоды в любое время</p>
+              </div>
+              <nav class="footer-nav">
+                <a href="">Главная</a>
+                <a href="">Прогноз на 5 дней</a>
+                <a href="">Погода сейчас</a>
+              </nav>
+            </div>
+            <div class="footer-bottom">
+              <p>© 2025 GMD Weather. Все права защищены.</p>
+            </div>
+        </footer>
+    </body>
+    <script src="./scripts/forecast.js"></script>
+</html>

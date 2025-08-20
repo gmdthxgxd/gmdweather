@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+.main-background {
+    background-image: url(../images/bg_img.jpg);
+    background-size: 105% 100%;
+    background-repeat: no-repeat;
+    animation: bgSliding 10s ease-in-out infinite;
+}
+
+.overlay {
+    height: 100vh;
+    background-color: rgba(73, 46, 129, 0.15);
+    backdrop-filter: blur(5px)
+}
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    height: 10vh;
+    padding: 20px 0;
+}
+.nav-menu {
+    display: flex;
+    justify-content: space-evenly;
+    height: 100%;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+}
+.menu {
+    display: flex;
+    justify-content: space-evenly;
+    width: 30%;
+    min-height: 50px;
+    background-color: #F3F3F3;
+    border-radius: 50vh;
+    padding: 5px;
+    box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.2);
+}
+.menu-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50vh;
+    text-decoration: none;
+    text-align: center;
+    width: 49%;
+    transition: .3s;
+}
+.menu-btn:hover {
+    background-color: #C4E1E6;
+}
+.menu a:visited {
+    color: inherit;
+}
+.city {
+    background-color: #C4E1E6;
+}
+
+/* Your city section */
+        /* | */
+        /* v */
+
+.your-city {
+    height: 90vh;
+}
+.logo {
+    margin: 5vh auto;
+    width: 18vw;
+}
+.logo img {
+    width: 100%;
+    height: 100%;
+}
+.city-info {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    width: 35vw;
+    height: 30vh;
+    border-radius: 25px;
+    margin: 10vh auto;
+    background-color: #F3F3F3;
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.25);
+}
+.city-text {
+    width: 75%;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    color: #353535;
+}
+.city-text p:first-child {
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+.city-input-container {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 100px;
+    width: 20vw;
+    height: 5vh;
+    background-color: #FFFFFF;
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.25);
+}
+.city-icon {
+    margin: 0 20px;
+}
+.city-input {
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    background-color: #FFFFFF;
+    width: 60%;
+    height: 100%;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+}
+.city-input:-webkit-autofill {
+    background-color: transparent;
+    box-shadow: 0 0 0px 1000px white inset;
+}
+.submit-city {
+    height: 4vh;
+    width: fit-content;
+    margin-right: .5vh;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.9rem;
+    color: #F3F3F3;
+    border: 0;
+    border-radius: 100px;
+    background-color: #4788a0;
+    transition: .2s;
+}
+.submit-city:hover {
+    height: 5vh;
+    width: 30%;
+    margin-right: 0;
+}
+.submit-city:active {
+    background-color: #0a3d68;
+}
+
+
+.footer {
+    background: linear-gradient(to right, #3b82f6, #60a5fa);
+    color: white;
+    padding: 20px 0;
+    font-family: "Nunito";
+}
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.footer-logo h2 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+} 
+.footer-logo p {
+    opacity: 0.85;
+}
+.footer-logo span {
+    color: #ffdd57;
+}
+.footer-nav {
+    display: flex;
+    gap: 20px;
+}
+.footer-nav a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.footer-nav a:hover {
+    color: #ffdd57;
+} 
+.footer-bottom {
+    text-align: center;
+    font-size: 0.8rem;
+    opacity: 0.8;
+    margin-top: 15px;
+}
+  
+  /* Адаптив */
+@media (max-width: 600px) {
+    .main-background {
+        background-size: 1024px 100%;
+        animation: bgSliding 20s ease-in-out infinite;
+    }
+    .overlay {
+        height: 110vh;
+    }
+    header {
+        height: 20vh
+    }
+    .nav-menu {
+        flex-direction: column;
+        align-items: center;
+        font-size: 0.9rem;
+    }
+    .menu {
+        width: 90vw;
+        height: 50%;
+        margin: 10px 0;
+        background-color: #f3f3f3a9;
+    }
+    .menu-btn {
+        background-color: #f3f3f3;
+        box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.2);
+    }
+    .city {
+        background-color: #C4E1E6;
+    }
+
+    .logo {
+        width: 60vw;
+    }
+    .city-info {
+        width: 90vw;
+        height: 40vh;
+        border-radius: 10px;
+    }
+    .city-text {
+        width: 80%;
+        font-size: 0.9rem
+    }
+    .city-input-container {
+        width: 80%;
+    }
+    .city-icon {
+        margin: 0 10px;
+    }
+    .city-input {
+        font-size: 1rem;
+    }
+    .submit-city {
+        /* width: 33%; */
+        font-size: 0.8rem;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+}
+
+@keyframes bgSliding {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 100% 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
+
