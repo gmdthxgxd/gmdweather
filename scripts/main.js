@@ -3,7 +3,7 @@ const API_KEY = "69b1cd01cb678889c132b746d11297fd";
 
 const submitCity = async () => {
     const cityName = document.getElementById('city-input').value.trim();
-    const cityUrl = `http://api.openweathermap.org/geo/1.0/direct?q=${cityName}&limit=1&appid=${API_KEY}`;
+    const cityUrl = `https://api.openweathermap.org/geo/1.0/direct?q=${cityName}&limit=1&appid=${API_KEY}`;
     
     try {
         const response = await fetch(cityUrl);
@@ -32,4 +32,5 @@ if (localStorage.length != 0) {
     document.getElementById("weatherByDaysBtn").setAttribute("href", "weatherByDays.html");
     document.getElementById("weatherNowBtn").setAttribute("href", "weatherNow.html");
 }
+
 console.log(localStorage.length);
