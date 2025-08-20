@@ -32,5 +32,3 @@ if (localStorage.length != 0) {
     document.getElementById("weatherByDaysBtn").setAttribute("href", "weatherByDays.html");
     document.getElementById("weatherNowBtn").setAttribute("href", "weatherNow.html");
 }
-
-console.log(localStorage.length);
