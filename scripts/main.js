@@ -31,4 +31,7 @@ submitCityButton.addEventListener('click', () => submitCity());
 if (localStorage.length != 0) {
     document.getElementById("weatherByDaysBtn").setAttribute("href", "weatherByDays.html");
     document.getElementById("weatherNowBtn").setAttribute("href", "weatherNow.html");
+    document.getElementById("footer-nav-forecast").setAttribute("href", "weatherByDays.html");
+    document.getElementById("footer-nav-onecall").setAttribute("href", "weatherNow.html");
 }
+
